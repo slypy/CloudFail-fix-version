@@ -19,7 +19,6 @@ import dns.resolver
 
 colorama.init(Style.BRIGHT)
 
-
 def print_out(data, end='\n'):
     datetimestr = str(datetime.datetime.strftime(datetime.datetime.now(), '%H:%M:%S'))
     print(Style.NORMAL + "[" + datetimestr + "] " + re.sub(' +', ' ', data) + Style.RESET_ALL,' ', end=end)
