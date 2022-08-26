@@ -291,7 +291,7 @@ if args.tor is True:
         print_out(Fore.WHITE + Style.BRIGHT + "New IP: " + tor_ip)
 
     except requests.exceptions.RequestException as e:
-        print(e, net_exc)
+        print_out(Fore.RED + "Domain is not valid, exiting")
         sys.exit(0)
 
 if args.update is True:
